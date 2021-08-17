@@ -169,6 +169,9 @@ p ~ a:focus {
     background-color: #fff;
     color:hsl(322, 100%, 66%);
 }
+.card-cto-one {
+    display: none;
+}
 
 /* CARDS SECTION */
 .d-flex {
@@ -196,6 +199,152 @@ p ~ a:focus {
     margin-bottom: 1.25rem;
     max-width: 50%;
 }
+.card:nth-child(5) > .d-flex ~ a {
+    display: inline-block;
+    border: 2px solid hsl(322, 100%, 66%);
+    background-color: hsl(322, 100%, 66%);
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 1rem;
+    font-size: 13px;
+    padding: 5px 55px;
+    color: #fff;
+}
+    /* TESTIMONIAL SECTION */
+    .testimonal-bg {
+        margin-top: 5rem;
+        min-height: 100vh;
+        height: auto;
+        background: url("img/bg-curve-mobile.svg") center/cover no-repeat;
+        /* background-repeat: no-repeat;
+        background-position: 100% 5%;
+        background-size: cover; */
+    }
+    .testimonal-bg .two-column-grid {
+        padding-top: 5rem;
+    }
+    .testimonal-text h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .testimonal-text p {
+        color: hsl(0, 0%, 59%);
+        font-size: 15px;
+    }
+    .button-link {
+        font-size: 13px;
+        text-align: center;
+    }
+    .button-link a {
+        color: hsl(322, 100%, 66%);
+        text-decoration: none;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+    }
+    .testimonal-text > .card{
+        text-align: left;
+        background-color: #fff;
+        margin-bottom: 2rem;
+    }
+    .card-quote-img {
+        margin-bottom: 0rem;
+    }
+    .testimonal-text > .card > .card-text p {
+        margin-top: -0.55rem;
+        font-size: small;
+    }
+    .profile-info h5{
+        font-size: 16px;
+        margin-top: 0rem;
+        margin-bottom:-0.85rem;
+    }
+    .profile-info span {
+        font-size: 10px;
+        margin-top: 0rem
+    }
+    .testimonal-text ~ .card-img img {
+        max-width: 100%;
+    }
+
+    /* PRICING SECTION START */
+    .pricing-heading {
+        text-align: center;
+    }
+    .package-options hr {
+        width: 60%;
+    }
+    .package-options p {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .package-options p + .package-options p {
+        margin-bottom: 0rem;
+    }
+    .package p {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .price p {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+    .pricing-card-option-one,
+    .pricing-card-option-three{
+        box-shadow: 0 0px 5px 5px #b8ddf59c;
+        -moz-box-shadow: 0 0px 5px 5px #b8ddf59c;
+        -webkit-box-shadow: 0 0px 5px 5px #b8ddf59c;
+        color: hsl(0, 0%, 59%);
+    }
+    .pricing-card-option-two {
+        box-shadow: 0 5px 4px 8px #b8ddf59c;
+        -moz-box-shadow: 0 5px 8px 8px #b8ddf59c;
+        -webkit-box-shadow: 5 5px 5px 8px #b8ddf59c;
+        color: #fff;
+        border: 15px solid hsl(192, 100%, 9%);
+        background-color: hsl(192, 100%, 9%);
+    }
+    .pricing-card-option-one a,
+    .pricing-card-option-three a {
+        display: inline-block;
+        border: 2px solid hsl(322, 100%, 66%);
+        background-color: hsl(322, 100%, 66%);
+        text-decoration: none;
+        border-radius: 20px;
+        margin-top: 1rem;
+        font-size: 16px;
+        padding: 5px 55px;
+        font-weight: 700;
+        color: #fff;
+    }
+    .pricing-card-option-two a {
+        display: inline-block;
+        border: 2px solid hsl(322, 100%, 66%);
+        background-color: #fff;
+        text-decoration: none;
+        border-radius: 20px;
+        margin-top: 1rem;
+        font-size: 16px;
+        padding: 5px 55px;
+        font-weight: 700;
+        color: hsl(322, 100%, 66%);
+    }
+    .pricing-card-option-one a:hover,
+    .pricing-card-option-three a:hover,
+    .pricing-card-option-one a:focus,
+    .pricing-card-option-three a:focus {
+        color:hsl(322, 100%, 66%);
+        background-color: #fff;
+    } 
+    .pricing-card-option-two a:hover,
+    .pricing-card-option-two a:focus {
+        color: #fff;
+        background-color: hsl(322, 100%, 66%);
+    }
+    
+    
 
 .card-cto {
     background-color: #fff;
@@ -290,6 +439,7 @@ li {
         padding: 5px 55px;
         color: #fff;
     }
+
     .card-heading {
         font-size: 15px;
     }
@@ -307,8 +457,45 @@ li {
         padding: 5px 55px;
         font-size: 13px;
     }
-}
 
+}
+@media (min-width: 730px) {
+    header {
+        padding: 100px;
+    }
+    .card-cto-one {
+        display: block;
+        background-color: #fff;
+        color: hsl(0, 0%, 59%);
+        position: relative;
+        top: -50px;
+        padding: 5rem 2rem;
+        border: 5px solid #fff;
+        border-radius: 15px;
+        box-shadow: 0 5px 4px 4px #b8ddf59c;
+        -moz-box-shadow: 0 5px 4px 4px #b8ddf59c;
+        -webkit-box-shadow: 0 5px 4px 4px #b8ddf59c;
+        max-width: 580px !important;
+    }
+    .card-cto-one h2,
+    .card-cto-one p {
+        text-align: center;
+    }
+    .card-cto-one h2 {
+        color: black;
+    }
+    .card-cto-one a {
+        margin-top: 1.85rem;
+        margin-left: 10rem;
+    }
+    .offerings {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .offerings ion-icon {
+        color: hsl(322, 100%, 66%);
+    }
+}
 @media (min-width: 800px) {
     .nav-toggle {
         display: none;
@@ -342,7 +529,7 @@ li {
 
 }
 
-@media (min-width: 900px) {
+@media (min-width: 960px) {
     .two-column-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -370,6 +557,63 @@ li {
         width: 65%;
         margin: 2rem auto;
     }
+    .card:nth-child(5) {
+        grid-column: 1 / 3;
+        max-width: 880px;
+        width: 100%;
+    }
+    .card:nth-child(5) > .d-flex ~ a {
+        display: inline-block;
+        border: 2px solid hsl(322, 100%, 66%);
+        background-color: hsl(322, 100%, 66%);
+        text-decoration: none;
+        border-radius: 20px;
+        margin-top: 1rem;
+        font-size: 13px;
+        padding: 5px 55px;
+        color: #fff;
+    }
+    .card:nth-child(5) > .d-flex ~ a:hover,
+    .card:nth-child(5) > .d-flex ~ a:focus {
+        background-color: #fff;
+        color:hsl(322, 100%, 66%);
+    }
+    .card:nth-child(5) > .d-flex {
+        flex-direction: row;
+    }
+    /* TESTIMONIAL SECTION */
+    .testimonal-bg > .container {
+        max-width: 1380px;
+        width: 100%;
+        padding-left: 1rem;
+    }
+    .testimonal-bg .container > .two-column-grid {
+        gap: 200px;
+    }
+    .testimonal-text ~ .card-img img {
+        margin-top: 1rem;
+        max-width: 90%;
+        min-width: 375px;
+    }
+    .testimonal-text h2 {
+        font-size: 22px;
+        text-align: left;
+    }
+    .testimonal-text p {
+        font-size: 15px;
+    }
+
+    /* PRICING SECTION  */
+
+    .pricing > .two-column-grid {
+        margin-top: 5rem;
+        justify-content: center;
+        align-content: center;
+    }
+    .three-column-grid > .card:nth-child(3) {
+        grid-column: 1 / 3;
+    }
+
     .four-grid-column {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -386,5 +630,27 @@ li {
     }
     .copy-rights {
         margin-top: 5rem;
+    }
+}
+
+@media (min-width: 1240px) {
+    .pricing > .two-column-grid{
+        grid-template-columns: repeat(3, 0fr);
+        
+    }
+    .three-column-grid > .card:nth-child(3) {
+        grid-column: 3;
+    }
+    .pricing .container {
+        max-width: 1330px;
+        width: 80%;
+    }
+    .pricing-card-option-one,
+    .pricing-card-option-three {
+        height: 55vh;
+    }
+    .pricing-card-option-two {
+        position: relative;
+        top: -30px;
     }
 }

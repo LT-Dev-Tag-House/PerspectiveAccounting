@@ -615,11 +615,14 @@ li {
         max-width: 300px;
     }
     .heading-styling {
-        font-size: .75rem;
+        font-size: .55rem;
+    }
+    .border-line {
+        margin-top: 1.55rem;
     }
     .team .sub-heading {
         text-align: center;
-        font-size: .85rem;
+        font-size: .65rem;
     }   
 
 }

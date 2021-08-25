@@ -613,6 +613,13 @@ li {
     }
     .faq-img img {
         max-width: 300px;
+    }
+    .heading-styling {
+        font-size: .75rem;
+    }
+    .team .sub-heading {
+        text-align: center;
+        font-size: .85rem;
     }   
 
 }
